@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Example E2E Test with Protractor</title>
+	<meta charset="utf-8">
+</head>
+<body ng-controller="FormExample as vm">
+	<input type="number" ng-model="vm.model.number01" placeholder="Number 01" >	
+	<input type="number" ng-model="vm.model.number02" placeholder="Number 02" >
+	<button id="btnAdd" type="button" ng-click="vm.add(vm.model)">+</button>
+	<p id="result">{{ vm.result }}</p>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="src/app/app.module.js"></script>
+	<script type="text/javascript" src="src/app/form-example.controller.js"></script>
+</body>
+</html>
